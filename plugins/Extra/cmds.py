@@ -36,6 +36,7 @@ async def admin_cmds(client, message):
         [KeyboardButton("/refresh"), KeyboardButton("/set_muc")],
         [KeyboardButton("/pm_search_on"), KeyboardButton("/pm_search_off")],
         [KeyboardButton("/set_ads"), KeyboardButton("/del_ads")],
+        [KeyboardButton("/movie_update_off"), KeyboardButton("/Movie_update_on")],
         [KeyboardButton("/setlist"), KeyboardButton("/clearlist")],
         [KeyboardButton("/verify_id"), KeyboardButton("/index")],
         [KeyboardButton("/send"), KeyboardButton("/leave")],
@@ -45,7 +46,7 @@ async def admin_cmds(client, message):
         [KeyboardButton("/del_file"), KeyboardButton("/delete")],
         [KeyboardButton("/deletefiles"), KeyboardButton("/deleteall")],
         [KeyboardButton("All These Commands Can Be Used Only By Admins.")],
-        [KeyboardButton("⚡ powered by @JISSHU_BOTS")]
+        [KeyboardButton("⚡ powered by @Tmr_Botz")]
     ]
     reply_markup = ReplyKeyboardMarkup(buttons, resize_keyboard=True, one_time_keyboard=True)
    
@@ -72,6 +73,8 @@ async def set_commands(client, message):
         BotCommand("refer", "To Refer Your Friend And Get Premium"),
         BotCommand("stats", "Check My Database"),
         BotCommand("id", "Get Telegram Id"),
+        BotCommand("movie_update_off", "Movie Update Off"),
+        BotCommand("Movie_update_on", "Movie Update On"),
         BotCommand("font", "To Generate Cool Fonts"),
         BotCommand("details", "Check Group Details"),
         BotCommand("settings", "Change Bot Setting"),
