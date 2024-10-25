@@ -20,25 +20,25 @@ BOT_TOKEN = environ.get('BOT_TOKEN', '6468740696:AAEkXwEYOnu7X-9hIcg4zw5a5dTbEfW
 #---------------------------------------------------------------
 ADMINS = [int(admin) if id_pattern.search(admin) else admin for admin in environ.get('ADMINS', '6987799874').split()]
 USERNAME = environ.get('USERNAME', "https://t.me/TMR_DEVELOPER") # ADMIN USERNAME
-LOG_CHANNEL = int(environ.get('LOG_CHANNEL', '-1001854798365'))
+LOG_CHANNEL = int(environ.get('LOG_CHANNEL', '-1002205504138'))
 MOVIE_GROUP_LINK = environ.get('MOVIE_GROUP_LINK', 'https://t.me/TMR_movie_request_group')
 CHANNELS = [int(ch) if id_pattern.search(ch) else ch for ch in environ.get('CHANNELS', '-1002065082779').split()]
 #---------------------------------------------------------------
 #---------------------------------------------------------------
-DATABASE_URI = environ.get('DATABASE_URI', "mongodb+srv://tmr624062:5Bm5K02Z5PZMqtqa@cluster0.zy0l7qn.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0")
-DATABASE_NAME = environ.get('DATABASE_NAME', "Cluster0")
+DATABASE_URI = environ.get('DATABASE_URI', "mongodb+srv://tmr624062:Cxs15LkyZifDUD72@cluster0.t4dar.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0")
+DATABASE_NAME = environ.get('DATABASE_NAME', "Tmrbotz")
 COLLECTION_NAME = environ.get('COLLECTION_NAME', 'Telegram_files')
 #---------------------------------------------------------------
 #---------------------------------------------------------------
 #----------- There will be channel id add in all these ---------
-LOG_API_CHANNEL = int(environ.get('LOG_API_CHANNEL', '-1001854798365'))  # set shortner log channel
-DELETE_CHANNELS = int(environ.get('DELETE_CHANNELS','0')) # The movie you upload in it will be deleted from the bot.
-LOG_VR_CHANNEL = int(environ.get('LOG_VR_CHANNEL', '-1001854798365'))
+LOG_API_CHANNEL = int(environ.get('LOG_API_CHANNEL', '-1002205504138'))  # set shortner log channel
+DELETE_CHANNELS = int(environ.get('DELETE_CHANNELS',''-1002150048594')) # The movie you upload in it will be deleted from the bot.
+LOG_VR_CHANNEL = int(environ.get('LOG_VR_CHANNEL', '-1002205504138'))
 AUTH_CHANNEL = [int(ch) if id_pattern.search(ch) else ch for ch in environ.get('AUTH_CHANNEL', '-1002370104056 -1001868502293').split()] # give
-SUPPORT_GROUP = int(environ.get('SUPPORT_GROUP', '0'))
-request_channel = environ.get('REQUEST_CHANNEL', '-1001854798365') # If anyone sends a request message to your bot, you will get it in this channel.
-MOVIE_UPDATE_CHANNEL = int(environ.get('MOVIE_UPDATE_CHANNEL', '-1001854798365')) # 
-SUPPORT_CHAT = environ.get('SUPPORT_CHAT', 'https://t.me/TMR_Movie_request') #Support group link ( make sure bot is admin )
+SUPPORT_GROUP = int(environ.get('SUPPORT_GROUP', '-1002405909671'))
+request_channel = environ.get('REQUEST_CHANNEL', '-1002205504138') # If anyone sends a request message to your bot, you will get it in this channel.
+MOVIE_UPDATE_CHANNEL = int(environ.get('MOVIE_UPDATE_CHANNEL', '-1002129846846')) # 
+SUPPORT_CHAT = environ.get('SUPPORT_CHAT', 'https://t.me/Tmr_Botz_Support') #Support group link ( make sure bot is admin )
 #---------------------------------------------------------------
 #---------------------------------------------------------------
 IS_VERIFY = is_enabled('IS_VERIFY', True)
