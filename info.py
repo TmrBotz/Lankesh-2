@@ -72,8 +72,8 @@ REQUEST_CHANNEL = int(request_channel) if request_channel and id_pattern.search(
 START_IMG = (environ.get('START_IMG', 'https://envs.sh/Wra.jpg https://envs.sh/WrO.jpg https://envs.sh/Wrm.jpg https://envs.sh/WrM.jpg https://envs.sh/WrH.jpg https://envs.sh/Wrg.jpg https://envs.sh/Wrf.jpg')).split()
 FORCESUB_IMG = environ.get('FORCESUB_IMG', 'https://i.ibb.co/ZNC1Hnb/ad3f2c88a8f2.jpg')
 REFER_PICS = (environ.get("REFER_PICS", "https://envs.sh/PSI.jpg")).split() 
-PAYPICS = (environ.get('PAYPICS', 'https://graph.org/file/f4db1c3ad3d9e38b328e6.jpg')).split()
-SUBSCRIPTION = (environ.get('SUBSCRIPTION', 'https://graph.org/file/9f3f47c690bbcc67633c2.jpg'))
+PAYPICS = (environ.get('PAYPICS', 'https://envs.sh/W0a.jpg')).split()
+SUBSCRIPTION = (environ.get('SUBSCRIPTION', 'https://envs.sh/W03.jpg'))
 REACTIONS = ["👀", "😱", "🔥", "😍", "🎉", "🥰", "😇", "⚡"]
 #---------------------------------------------------------------
 #---------------------------------------------------------------
@@ -107,7 +107,7 @@ if 'DYNO' in environ:
     ON_HEROKU = True
 else:
     ON_HEROKU = False
-URL = environ.get("FQDN", "")
+URL = environ.get("FQDN", "https://yabbering-ashley-vishalsah-dbfc2f0b.koyeb.app/")
 
 #---------------------------------------------------------------
 #---------------------------------------------------------------
