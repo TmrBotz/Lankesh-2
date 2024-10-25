@@ -32,7 +32,7 @@ COLLECTION_NAME = environ.get('COLLECTION_NAME', 'Telegram_files')
 #---------------------------------------------------------------
 #----------- There will be channel id add in all these ---------
 LOG_API_CHANNEL = int(environ.get('LOG_API_CHANNEL', '-1002205504138'))  # set shortner log channel
-DELETE_CHANNELS = int(environ.get('DELETE_CHANNELS',''-1002150048594')) # The movie you upload in it will be deleted from the bot.
+DELETE_CHANNELS = int(environ.get('DELETE_CHANNELS','-1002150048594')) # The movie you upload in it will be deleted from the bot.
 LOG_VR_CHANNEL = int(environ.get('LOG_VR_CHANNEL', '-1002205504138'))
 AUTH_CHANNEL = [int(ch) if id_pattern.search(ch) else ch for ch in environ.get('AUTH_CHANNEL', '-1002370104056 -1001868502293').split()] # give
 SUPPORT_GROUP = int(environ.get('SUPPORT_GROUP', '-1002405909671'))
