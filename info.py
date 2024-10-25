@@ -53,7 +53,7 @@ SHORTENER_API2 = environ.get("SHORTENER_API2", "b12399b844524f48cf46abe0ec8f8114
 SHORTENER_WEBSITE2 = environ.get("SHORTENER_WEBSITE2", 'gplinks.com')
 SHORTENER_API3 = environ.get("SHORTENER_API3", "8cefe6e80dc4dd1f046e74f32e3d3fee248306f3")
 SHORTENER_WEBSITE3 = environ.get("SHORTENER_WEBSITE3", 'gplinks.com')
-TWO_VERIFY_GAP = int(environ.get('TWO_VERIFY_GAP', "14400"))
+TWO_VERIFY_GAP = int(environ.get('TWO_VERIFY_GAP', "600"))
 THREE_VERIFY_GAP = int(environ.get('THREE_VERIFY_GAP', "14400"))
 #---------------------------------------------------------------
 #---------------------------------------------------------------
@@ -74,7 +74,7 @@ FORCESUB_IMG = environ.get('FORCESUB_IMG', 'https://i.ibb.co/ZNC1Hnb/ad3f2c88a8f
 REFER_PICS = (environ.get("REFER_PICS", "https://envs.sh/PSI.jpg")).split() 
 PAYPICS = (environ.get('PAYPICS', 'https://envs.sh/W0a.jpg')).split()
 SUBSCRIPTION = (environ.get('SUBSCRIPTION', 'https://envs.sh/W03.jpg'))
-REACTIONS = ["👀", "😱", "🔥", "😍", "🎉", "🥰", "😇", "⚡"]
+REACTIONS = ["👀", "👻", "😱", "🔥", "😍", "🎉", "🥰", "😇", "⚡"]
 #---------------------------------------------------------------
 #---------------------------------------------------------------
 #---------------------------------------------------------------
