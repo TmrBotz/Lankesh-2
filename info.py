@@ -37,7 +37,7 @@ LOG_VR_CHANNEL = int(environ.get('LOG_VR_CHANNEL', '-1002205504138'))
 AUTH_CHANNEL = [int(ch) if id_pattern.search(ch) else ch for ch in environ.get('AUTH_CHANNEL', '-1002370104056 -1001868502293').split()] # give
 SUPPORT_GROUP = int(environ.get('SUPPORT_GROUP', '-1002405909671'))
 request_channel = environ.get('REQUEST_CHANNEL', '-1002205504138') # If anyone sends a request message to your bot, you will get it in this channel.
-MOVIE_UPDATE_CHANNEL = int(environ.get('MOVIE_UPDATE_CHANNEL', '')) # 
+MOVIE_UPDATE_CHANNEL = int(environ.get('MOVIE_UPDATE_CHANNEL', '-1002178270630')) # 
 SUPPORT_CHAT = environ.get('SUPPORT_CHAT', 'https://t.me/Tmr_Botz_Support') #Support group link ( make sure bot is admin )
 #---------------------------------------------------------------
 #---------------------------------------------------------------
