@@ -45,7 +45,7 @@ async def pm_search(client, message):
         await auto_filter(client, message)
     else:
         await message.reply_text("<b><i>आप यहाँ से फिल्में नहीं प्राप्त कर सकते हैं, इसे हमारे मूवी अनुरोध समूह में अनुरोध करें या नीचे दिए गए बटन पर क्लिक करें 👇.\n\nʏᴏᴜ ᴄᴀɴ'ᴛ ɢᴇᴛ ᴍᴏᴠɪᴇs ꜰʀᴏᴍ ʜᴇʀᴇ. ʀᴇǫᴜᴇsᴛ ɪᴛ ɪɴ ᴏᴜʀ ᴍᴏᴠɪᴇ ɢʀᴏᴜᴘ ᴏʀ ᴄʟɪᴄᴋ ʜᴇʀᴇ ʙᴜᴛᴛᴏɴ ʙᴇʟᴏᴡ 👇.</i></b>",
-                                 reply_markup=InlineKeyboardMarkup([[InlineKeyboardButton("📝 ᴍᴏᴠɪᴇ ꜱᴇᴀʀᴄʜ ɢʀᴏᴜᴘ ", url=f'https://t.me/TMR_movie_request_group')]]))
+                                 reply_markup=InlineKeyboardMarkup([[InlineKeyboardButton("📝 ᴍᴏᴠɪᴇ ꜱᴇᴀʀᴄʜ ɢʀᴏᴜᴘ ", url=f'https://t.me/Hindi_South_Hollywood_Bollywoo')]]))
         
     
 @Client.on_message(filters.group & filters.text & filters.incoming)
@@ -815,14 +815,6 @@ async def cb_handler(client: Client, query: CallbackQuery):
                 ],[
                 InlineKeyboardButton("Hᴇʟᴘ ⚙️", callback_data='features'),
                 InlineKeyboardButton('Aʙᴏᴜᴛ 💌', callback_data=f'about')
-                ],[
-                InlineKeyboardButton('Pʀᴇᴍɪᴜᴍ 🎫', callback_data='seeplans'),
-                InlineKeyboardButton('Rᴇғᴇʀ ⚜️', callback_data="reffff")
-                ],[
-                InlineKeyboardButton('Mᴏsᴛ Sᴇᴀʀᴄʜ 🔍', callback_data="mostsearch"),
-                InlineKeyboardButton('Tᴏᴘ Tʀᴇɴᴅɪɴɢ ⚡', callback_data="trending")
-	        ],[
-		InlineKeyboardButton('💞 If You Like Me Than Share Me 💞', url=f'http://t.me/share/url?url=%2A%2AHey+%F0%9F%91%8B%2C%2A%2A%0D%0A%2A%2ACheckout+%2A%2A%40TMR_movie_request_group%2A%2A+For+Searching+Latest+Movies+And+Series+In+Multiple+Languages%2C+It%27s+Just+A+Awesome+Group+For+Searching+Movie+%F0%9F%98%8D%2A%2A%0D%0A%0D%0A%2A%2AJoin+Backup%2A%2A+-+%2A%2A%40Tmr_Botz%2A%2A%0D%0A%0D%0A%2A%2A%E0%A4%A8%E0%A4%AE%E0%A4%B8%E0%A5%8D%E0%A4%A4%E0%A5%87+%F0%9F%91%8B%2C%2A%2A%0D%0A%2A%2A%E0%A4%85%E0%A4%A8%E0%A5%87%E0%A4%95+%E0%A4%AD%E0%A4%BE%E0%A4%B7%E0%A4%BE%E0%A4%93%E0%A4%82+%E0%A4%AE%E0%A5%87%E0%A4%82+%E0%A4%A8%E0%A4%B5%E0%A5%80%E0%A4%A8%E0%A4%A4%E0%A4%AE+%E0%A4%AB%E0%A4%BC%E0%A4%BF%E0%A4%B2%E0%A5%8D%E0%A4%AE%E0%A5%87%E0%A4%82+%E0%A4%94%E0%A4%B0+%E0%A4%B8%E0%A5%80%E0%A4%B0%E0%A5%80%E0%A4%9C%E0%A4%BC+%E0%A4%96%E0%A5%8B%E0%A4%9C%E0%A4%A8%E0%A5%87+%E0%A4%95%E0%A5%87+%E0%A4%B2%E0%A4%BF%E0%A4%8F+%2A%2A%40TMR_movie_request_group%2A%2A+%E0%A4%A6%E0%A5%87%E0%A4%96%E0%A5%87%E0%A4%82%2C+%E0%A4%AF%E0%A4%B9+%E0%A4%8F%E0%A4%95+%E0%A4%AC%E0%A5%87%E0%A4%B9%E0%A4%A4%E0%A4%B0%E0%A5%80%E0%A4%A8+%E0%A4%97%E0%A5%8D%E0%A4%B0%E0%A5%81%E0%A4%AA+%E0%A4%B9%E0%A5%88+%E0%A4%AE%E0%A5%82%E0%A4%B5%E0%A5%80+%E0%A4%95%E0%A5%87+%E0%A4%B2%E0%A4%BF%E0%A4%8F+%E0%A4%B9%E0%A5%88+%F0%9F%98%8D%2A%2A%0D%0A%0D%0A%2A%2A%E0%A4%AC%E0%A5%88%E0%A4%95%E0%A4%85%E0%A4%AA+%E0%A4%9C%E0%A5%89%E0%A4%87%E0%A4%A8+%E0%A4%95%E0%A4%B0%E0%A5%87%E0%A4%82%2A%2A+-+%2A%2A%40Tmr_Botz%2A%2A')
                 ]] 
         reply_markup = InlineKeyboardMarkup(buttons)
         await query.message.edit_text(
