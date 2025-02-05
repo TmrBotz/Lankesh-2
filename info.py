@@ -19,9 +19,9 @@ BOT_TOKEN = environ.get('BOT_TOKEN', '6468740696:AAEkXwEYOnu7X-9w5a5dTbEfWZi9o')
 #---------------------------------------------------------------
 #---------------------------------------------------------------
 ADMINS = [int(admin) if id_pattern.search(admin) else admin for admin in environ.get('ADMINS', '1332454011 6987799874').split()]
-USERNAME = environ.get('USERNAME', "https://t.me/TMR_DEVELOPER") # ADMIN USERNAME
+USERNAME = environ.get('USERNAME', "https://t.me/secret_chora") # ADMIN USERNAME
 LOG_CHANNEL = int(environ.get('LOG_CHANNEL', '-1002293134923'))
-MOVIE_GROUP_LINK = environ.get('MOVIE_GROUP_LINK', 'https://t.me/TMR_movie_request_group')
+MOVIE_GROUP_LINK = environ.get('MOVIE_GROUP_LINK', 'https://t.me/Hindi_South_Hollywood_Bollywoo')
 CHANNELS = [int(ch) if id_pattern.search(ch) else ch for ch in environ.get('CHANNELS', '-1002496949285').split()]
 #---------------------------------------------------------------
 #---------------------------------------------------------------
@@ -38,7 +38,7 @@ AUTH_CHANNEL = [int(ch) if id_pattern.search(ch) else ch for ch in environ.get('
 SUPPORT_GROUP = int(environ.get('SUPPORT_GROUP', '-1002405909671'))
 request_channel = environ.get('REQUEST_CHANNEL', '-1002205504138') # If anyone sends a request message to your bot, you will get it in this channel.
 MOVIE_UPDATE_CHANNEL = int(environ.get('MOVIE_UPDATE_CHANNEL', '0')) # 
-SUPPORT_CHAT = environ.get('SUPPORT_CHAT', 'https://t.me/Tmr_Botz_Support') #Support group link ( make sure bot is admin )
+SUPPORT_CHAT = environ.get('SUPPORT_CHAT', 'https://t.me/Hindi_South_Hollywood_Bollywoo') #Support group link ( make sure bot is admin )
 #---------------------------------------------------------------
 #---------------------------------------------------------------
 IS_VERIFY = is_enabled('IS_VERIFY', False)
