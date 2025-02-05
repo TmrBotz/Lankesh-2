@@ -25,8 +25,8 @@ MOVIE_GROUP_LINK = environ.get('MOVIE_GROUP_LINK', 'https://t.me/Hindi_South_Hol
 CHANNELS = [int(ch) if id_pattern.search(ch) else ch for ch in environ.get('CHANNELS', '-1002496949285').split()]
 #---------------------------------------------------------------
 #---------------------------------------------------------------
-DATABASE_URI = environ.get('DATABASE_URI', "mongodb+srv://drozmarizabel991hull:CLa0GwZJGvVdkkqh@cluster0.amjee.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0")
-DATABASE_NAME = environ.get('DATABASE_NAME', "Lankesh")
+DATABASE_URI = environ.get('DATABASE_URI', "mongodb+srv://ravanyogi45:JKq9MdBYKr3PMG5M@cluster0.qj5ob.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0")
+DATABASE_NAME = environ.get('DATABASE_NAME', "Latest")
 COLLECTION_NAME = environ.get('COLLECTION_NAME', 'vjcollection')
 #---------------------------------------------------------------
 #---------------------------------------------------------------
