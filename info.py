@@ -13,35 +13,35 @@ def is_enabled(value, default):
 #---------------------------------------------------------------
 #---------------------------------------------------------------         ,
 SESSION = environ.get('SESSION', 'Media_search')
-API_ID = int(environ.get('API_ID', '23171051'))
-API_HASH = environ.get('API_HASH', '10331d5d712364f57ffdd23417f4513c')
-BOT_TOKEN = environ.get('BOT_TOKEN', '6468740696:AAEkXwEYOnu7X-9hIcg4zw5a5dTbEfWZi9o')
+API_ID = int(environ.get('API_ID', '27696177'))
+API_HASH = environ.get('API_HASH', '0c44906a4feff3b947db76dfa7c57d88')
+BOT_TOKEN = environ.get('BOT_TOKEN', '6468740696:AAEkXwEYOnu7X-9w5a5dTbEfWZi9o')
 #---------------------------------------------------------------
 #---------------------------------------------------------------
-ADMINS = [int(admin) if id_pattern.search(admin) else admin for admin in environ.get('ADMINS', '6987799874').split()]
+ADMINS = [int(admin) if id_pattern.search(admin) else admin for admin in environ.get('ADMINS', '1332454011 6987799874').split()]
 USERNAME = environ.get('USERNAME', "https://t.me/TMR_DEVELOPER") # ADMIN USERNAME
-LOG_CHANNEL = int(environ.get('LOG_CHANNEL', '-1002205504138'))
+LOG_CHANNEL = int(environ.get('LOG_CHANNEL', '-1002293134923'))
 MOVIE_GROUP_LINK = environ.get('MOVIE_GROUP_LINK', 'https://t.me/TMR_movie_request_group')
-CHANNELS = [int(ch) if id_pattern.search(ch) else ch for ch in environ.get('CHANNELS', '-1002065082779').split()]
+CHANNELS = [int(ch) if id_pattern.search(ch) else ch for ch in environ.get('CHANNELS', '-1002496949285').split()]
 #---------------------------------------------------------------
 #---------------------------------------------------------------
-DATABASE_URI = environ.get('DATABASE_URI', "mongodb+srv://tmr624062:Cxs15LkyZifDUD72@cluster0.t4dar.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0")
-DATABASE_NAME = environ.get('DATABASE_NAME', "Tmrbotz")
-COLLECTION_NAME = environ.get('COLLECTION_NAME', 'Telegram_files')
+DATABASE_URI = environ.get('DATABASE_URI', "mongodb+srv://drozmarizabel991hull:CLa0GwZJGvVdkkqh@cluster0.amjee.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0")
+DATABASE_NAME = environ.get('DATABASE_NAME', "Lankesh")
+COLLECTION_NAME = environ.get('COLLECTION_NAME', 'vjcollection')
 #---------------------------------------------------------------
 #---------------------------------------------------------------
 #----------- There will be channel id add in all these ---------
-LOG_API_CHANNEL = int(environ.get('LOG_API_CHANNEL', '-1002205504138'))  # set shortner log channel
-DELETE_CHANNELS = int(environ.get('DELETE_CHANNELS','-1002150048594')) # The movie you upload in it will be deleted from the bot.
-LOG_VR_CHANNEL = int(environ.get('LOG_VR_CHANNEL', '-1002205504138'))
+LOG_API_CHANNEL = int(environ.get('LOG_API_CHANNEL', '-1002293134923'))  # set shortner log channel
+DELETE_CHANNELS = int(environ.get('DELETE_CHANNELS','0')) # The movie you upload in it will be deleted from the bot.
+LOG_VR_CHANNEL = int(environ.get('LOG_VR_CHANNEL', '-1002293134923'))
 AUTH_CHANNEL = [int(ch) if id_pattern.search(ch) else ch for ch in environ.get('AUTH_CHANNEL', '-1002370104056 -1001868502293').split()] # give
 SUPPORT_GROUP = int(environ.get('SUPPORT_GROUP', '-1002405909671'))
 request_channel = environ.get('REQUEST_CHANNEL', '-1002205504138') # If anyone sends a request message to your bot, you will get it in this channel.
-MOVIE_UPDATE_CHANNEL = int(environ.get('MOVIE_UPDATE_CHANNEL', '-1002178270630')) # 
+MOVIE_UPDATE_CHANNEL = int(environ.get('MOVIE_UPDATE_CHANNEL', '0')) # 
 SUPPORT_CHAT = environ.get('SUPPORT_CHAT', 'https://t.me/Tmr_Botz_Support') #Support group link ( make sure bot is admin )
 #---------------------------------------------------------------
 #---------------------------------------------------------------
-IS_VERIFY = is_enabled('IS_VERIFY', True)
+IS_VERIFY = is_enabled('IS_VERIFY', False)
 #---------------------------------------------------------------
 TUTORIAL = environ.get("TUTORIAL", "https://t.me/TMR_how_to_downlod/2")
 TUTORIAL_2 = environ.get("TUTORIAL_2", "https://t.me/TMR_how_to_downlod/2")
@@ -69,7 +69,7 @@ REQUEST_CHANNEL = int(request_channel) if request_channel and id_pattern.search(
 #---------------------------------------------------------------
 #---------------------------------------------------------------
 #---------------------------------------------------------------
-START_IMG = (environ.get('START_IMG', 'https://envs.sh/Wra.jpg https://envs.sh/WrO.jpg https://envs.sh/Wrm.jpg https://envs.sh/WrM.jpg https://envs.sh/WrH.jpg https://envs.sh/Wrg.jpg https://envs.sh/Wrf.jpg')).split()
+START_IMG = (environ.get('START_IMG', 'https://graph.org/file/09973eb32ed7f72468dc3.jpg')).split()
 FORCESUB_IMG = environ.get('FORCESUB_IMG', 'https://i.ibb.co/ZNC1Hnb/ad3f2c88a8f2.jpg')
 REFER_PICS = (environ.get("REFER_PICS", "https://envs.sh/PSI.jpg")).split() 
 PAYPICS = (environ.get('PAYPICS', 'https://envs.sh/W0a.jpg')).split()
@@ -97,7 +97,7 @@ LINK_MODE = is_enabled('LINK_MODE', True)
 #---------------------------------------------------------------
 #---------------------------------------------------------------
 #---------------------------------------------------------------
-STREAM_MODE = bool(environ.get('STREAM_MODE', True)) # Set True or Flase
+STREAM_MODE = bool(environ.get('STREAM_MODE', False)) # Set True or Flase
 # Online Stream and Download
 
 MULTI_CLIENT = False
