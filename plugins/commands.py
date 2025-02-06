@@ -33,7 +33,7 @@ async def is_subscribed(bot, query, channel):
         try:
             await bot.get_chat_member(id, query.from_user.id)
         except UserNotParticipant:
-            btn.append([InlineKeyboardButton(f'Join {chat.title}', url=chat.invite_link)])
+            btn.append([InlineKeyboardButton(f'Join Now', url=chat.invite_link)])
         except Exception as e:
             pass
     return btn
@@ -322,7 +322,7 @@ async def start(client:Client, message):
                 file_caption=file.caption
             )
             btn = [[
-                InlineKeyboardButton("🎁 Oɴʟɪɴᴇ ᴡᴀᴛᴄʜ / Fᴀꜱᴛ ᴅᴏᴡɴʟᴏᴀᴅ 🎁", callback_data=f'stream#{file.file_id}')
+                InlineKeyboardButton("NETFLIX MOVIES 2025", url=f'https://t.me/Hindi_South_Hollywood_Bollywoo')
             ]]
             toDel = await client.send_cached_media(
                 chat_id=message.from_user.id,
@@ -362,7 +362,7 @@ async def start(client:Client, message):
         file_caption=files.caption
     )
     btn = [[
-        InlineKeyboardButton("🎁 Oɴʟɪɴᴇ ᴡᴀᴛᴄʜ / Fᴀꜱᴛ ᴅᴏᴡɴʟᴏᴀᴅ 🎁", callback_data=f'stream#{file_id}')
+        InlineKeyboardButton("NETFLIX MOVIES 2025", url=f'https://t.me/Hindi_South_Hollywood_Bollywoo')
     ]]
     toDel=await client.send_cached_media(
         chat_id=message.from_user.id,
