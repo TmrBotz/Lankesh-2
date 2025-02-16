@@ -69,7 +69,7 @@ async def send_movie_updates(bot, file_name, caption, file_id):
  
         movie_update_channel = await db.movies_update_channel_id() 
         btn = [[
-            InlineKeyboardButton('🔰 𝗠𝗼𝘃𝗶𝗲 𝗦𝗲𝗮𝗿𝗰𝗵 𝗚𝗿𝗼𝘂𝗽 🔰', url=f'https://t.me/TMR_movie_request_group')
+            InlineKeyboardButton('🔰 𝗠𝗼𝘃𝗶𝗲 𝗦𝗲𝗮𝗿𝗰𝗵 𝗚𝗿𝗼𝘂𝗽 🔰', url=f'https://t.me/Hindi_South_Hollywood_Bollywoo')
         ]] 
         reply_markup = InlineKeyboardMarkup(btn) 
  
